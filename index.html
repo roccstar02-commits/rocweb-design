@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="RocWeb Design builds affordable, modern websites for local businesses that want to look professional online and generate more leads."
+      content="RocWeb Design builds affordable, modern websites for local businesses that want to look professional online, generate leads, and book more consultations."
     />
     <title>RocWeb Design | Modern Websites for Local Business</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -17,10 +17,12 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+
     <div class="site-shell">
-      <header class="site-header">
-        <nav class="navbar container">
-          <a class="brand" href="#top" aria-label="RocWeb Design home">
+      <header class="site-header" id="top">
+        <nav class="navbar container" aria-label="Primary navigation">
+          <a class="brand" href="#top" data-scroll aria-label="RocWeb Design home">
             <span class="brand-mark">RW</span>
             <span class="brand-copy">
               <strong>RocWeb Design</strong>
@@ -41,50 +43,53 @@
 
           <div class="nav-panel" id="site-menu">
             <div class="nav-links">
-              <a href="#services">Services</a>
-              <a href="#industries">Who It's For</a>
-              <a href="#portfolio">Portfolio</a>
-              <a href="#pricing">Pricing</a>
-              <a href="#faq">FAQ</a>
-              <a href="#contact">Contact</a>
+              <a href="#services" data-scroll data-nav-link>Services</a>
+              <a href="#industries" data-scroll data-nav-link>Who We Serve</a>
+              <a href="#portfolio" data-scroll data-nav-link>Portfolio</a>
+              <a href="#pricing" data-scroll data-nav-link>Pricing</a>
+              <a href="#faq" data-scroll data-nav-link>FAQ</a>
+              <a href="#contact" data-scroll data-nav-link>Contact</a>
             </div>
-            <a class="button button-primary button-small" href="#contact">Get a Free Quote</a>
+            <div class="nav-actions">
+              <a class="button button-secondary button-small" href="mailto:hello@rocwebdesign.com">Email Us</a>
+              <a class="button button-primary button-small" href="#contact" data-scroll>Book a Consultation</a>
+            </div>
           </div>
         </nav>
       </header>
 
-      <main id="top">
-        <section class="hero-section">
+      <main id="main-content">
+        <section class="hero-section section-shell" aria-labelledby="hero-title">
           <div class="container hero-grid">
             <div class="hero-copy reveal">
-              <p class="eyebrow">Affordable web design for serious local businesses</p>
-              <h1>Websites That Make Local Businesses Look Professional</h1>
+              <p class="eyebrow">Affordable websites for local businesses that want to grow</p>
+              <h1 id="hero-title">Websites That Make Local Businesses Look Professional</h1>
               <p class="hero-text">
-                RocWeb Design builds modern, mobile-friendly websites for small businesses that
-                want more trust, better first impressions, and more leads from the people already
-                searching for them online.
+                RocWeb Design builds clean, modern, mobile-friendly websites for small businesses
+                that want stronger first impressions, more consultation requests, and a site that
+                is easy for customers to trust.
               </p>
               <div class="hero-actions">
-                <a class="button button-primary" href="#contact">Get a Free Quote</a>
-                <a class="button button-secondary" href="#services">See Services</a>
+                <a class="button button-primary" href="#contact" data-scroll>Get a Free Quote</a>
+                <a class="button button-secondary" href="#services" data-scroll>See Services</a>
               </div>
-              <div class="hero-metrics">
+              <div class="hero-metrics" aria-label="Key business metrics">
                 <article>
-                  <strong>1-3 weeks</strong>
-                  <span>Typical launch timeline</span>
+                  <strong><span data-count="14">0</span> days</strong>
+                  <span>Average launch window for smaller business sites</span>
                 </article>
                 <article>
-                  <strong>Mobile first</strong>
-                  <span>Built to look sharp everywhere</span>
+                  <strong><span data-count="100">0</span>% responsive</strong>
+                  <span>Designed to feel polished on mobile, tablet, and desktop</span>
                 </article>
                 <article>
-                  <strong>Simple process</strong>
-                  <span>Clear steps from quote to launch</span>
+                  <strong><span data-count="3">0</span> simple steps</strong>
+                  <span>Clear communication from first call to live launch</span>
                 </article>
               </div>
             </div>
 
-            <div class="hero-visual reveal reveal-delay">
+            <div class="hero-visual reveal reveal-delay" aria-hidden="true">
               <div class="hero-card hero-card-main">
                 <div class="browser-bar">
                   <span></span>
@@ -92,258 +97,313 @@
                   <span></span>
                 </div>
                 <div class="hero-card-content">
-                  <div class="mockup-badge">Live Business Site</div>
-                  <h2>Built to look premium without the agency price tag.</h2>
+                  <div class="mockup-badge">Lead-Ready Website</div>
+                  <h2>Premium presentation without the big-agency process.</h2>
                   <p>
-                    Clean layouts, lead-focused content, clear calls to action, and a polished
-                    experience that helps local businesses stand out.
+                    Clear messaging, stronger calls to action, and a website that makes your
+                    business feel established from the first click.
                   </p>
                   <div class="mockup-panels">
                     <div>
-                      <span>Lead capture</span>
-                      <strong>Quote forms that convert</strong>
+                      <span>Consultation flow</span>
+                      <strong>Simple quote requests and clean lead capture</strong>
                     </div>
                     <div>
-                      <span>Search ready</span>
-                      <strong>Basic SEO foundations included</strong>
+                      <span>Built for local trust</span>
+                      <strong>Position your business to look credible and easy to contact</strong>
                     </div>
                   </div>
                 </div>
               </div>
 
               <div class="floating-card floating-card-top">
-                <span>For contractors, salons, restaurants, gyms, and more</span>
+                <strong>Ideal for contractors, salons, restaurants, gyms, and service businesses</strong>
+                <span>Designed to speak clearly to the customers who are already searching.</span>
               </div>
               <div class="floating-card floating-card-bottom">
                 <strong>Modern Websites for Local Business</strong>
-                <span>Clear messaging. Better trust. More inquiries.</span>
+                <span>Better presentation. More confidence. More inquiries.</span>
               </div>
             </div>
           </div>
         </section>
 
-        <section class="logo-strip">
+        <section class="logo-strip section-shell" aria-label="Business types">
           <div class="container logo-strip-inner">
-            <p>Designed for the small businesses people actually hire every day</p>
+            <p>Built for the businesses people hire, call, and visit every day</p>
             <div class="logo-strip-list" id="logo-strip-list"></div>
           </div>
         </section>
 
-        <section class="section" id="services">
+        <section class="section section-shell" id="services" data-section aria-labelledby="services-title">
           <div class="container">
             <div class="section-heading reveal">
               <p class="eyebrow">Services</p>
-              <h2>Everything you need to launch a cleaner, more credible website</h2>
+              <h2 id="services-title">Everything you need to launch a cleaner, more credible online presence</h2>
               <p>
-                Straightforward web design services explained in plain English, so business owners
-                always know what they are getting and why it matters.
+                Straightforward web design services explained in plain English, so local business
+                owners know exactly what they are getting and how it helps bring in more leads.
               </p>
             </div>
             <div class="card-grid service-grid" id="services-grid"></div>
           </div>
         </section>
 
-        <section class="section section-alt" id="industries">
+        <section class="section section-shell section-alt" id="industries" data-section aria-labelledby="industries-title">
           <div class="container">
             <div class="section-heading reveal">
-              <p class="eyebrow">Who It's For</p>
-              <h2>Built for local businesses that need a stronger online presence</h2>
+              <p class="eyebrow">Who We Serve</p>
+              <h2 id="industries-title">Designed for local businesses that need a stronger online first impression</h2>
               <p>
-                Whether you book appointments, take calls, fill tables, or generate leads, RocWeb
-                Design creates websites that help customers trust you faster.
+                Whether your customers book appointments, request estimates, or walk through your
+                door, RocWeb Design helps your business look established and easier to trust.
               </p>
             </div>
             <div class="industry-grid" id="industries-grid"></div>
           </div>
         </section>
 
-        <section class="section" id="why-us">
+        <section class="section section-shell" id="why-us" data-section aria-labelledby="why-us-title">
           <div class="container why-us-layout">
             <div class="section-heading reveal">
-              <p class="eyebrow">Why Choose RocWeb Design</p>
-              <h2>A professional website process made simple for busy owners</h2>
+              <p class="eyebrow">Why RocWeb Design</p>
+              <h2 id="why-us-title">A simpler website process for business owners who want results</h2>
               <p>
-                You should not need a huge budget or a complicated agency relationship to get a
-                website that looks credible and helps your business grow.
+                You do not need a huge budget or a complicated agency relationship to get a website
+                that looks modern, builds trust, and helps turn visitors into real inquiries.
               </p>
             </div>
-            <div class="benefit-list" id="benefits-list"></div>
+            <div class="benefit-list" id="benefits-grid"></div>
           </div>
         </section>
 
-        <section class="section section-alt" id="portfolio">
+        <section class="section section-shell section-alt" id="portfolio" data-section aria-labelledby="portfolio-title">
           <div class="container">
             <div class="section-heading reveal">
               <p class="eyebrow">Example Work</p>
-              <h2>Clean, conversion-focused website concepts for real-world businesses</h2>
+              <h2 id="portfolio-title">Interactive project examples that show how RocWeb Design solves real business problems</h2>
               <p>
-                Placeholder projects below show the kind of polished, industry-specific presentation
-                RocWeb Design can deliver for local brands.
+                Each project card opens a polished preview panel with a business challenge,
+                solution, and outcome-style summary to help future clients picture what is possible.
               </p>
             </div>
             <div class="portfolio-grid" id="portfolio-grid"></div>
           </div>
         </section>
 
-        <section class="section" id="pricing">
+        <section class="section section-shell" id="pricing" data-section aria-labelledby="pricing-title">
           <div class="container">
             <div class="section-heading reveal">
               <p class="eyebrow">Pricing</p>
-              <h2>Simple packages for small businesses that want clarity</h2>
+              <h2 id="pricing-title">Clear packages for small businesses that want straightforward pricing</h2>
               <p>
-                Choose a starting point that fits your goals. If you need something more custom,
-                custom quotes are always available.
+                Choose the level that fits your business today. Need something more tailored? You
+                can always request a custom consultation.
               </p>
             </div>
             <div class="pricing-grid" id="pricing-grid"></div>
             <p class="pricing-note">
-              Need online booking, more pages, copy help, or ongoing monthly support? Request a
-              custom quote and we can build around your business.
+              Custom quotes are available for larger sites, booking integrations, copywriting help,
+              advanced pages, or ongoing monthly support.
             </p>
           </div>
         </section>
 
-        <section class="section section-alt" id="process">
+        <section class="section section-shell section-alt" id="process" data-section aria-labelledby="process-title">
           <div class="container">
             <div class="section-heading reveal">
               <p class="eyebrow">Process</p>
-              <h2>A clear four-step process from first call to launch day</h2>
+              <h2 id="process-title">A clear process that keeps your project moving without confusion</h2>
               <p>
-                The goal is to make getting a new website feel organized, low-stress, and easy to
-                follow.
+                The goal is to make the website process feel organized, low-stress, and easy to
+                follow from your first message to launch day.
               </p>
             </div>
             <div class="process-grid" id="process-grid"></div>
           </div>
         </section>
 
-        <section class="section" id="testimonials">
+        <section class="section section-shell" id="testimonials" data-section aria-labelledby="testimonials-title">
           <div class="container">
             <div class="section-heading reveal">
               <p class="eyebrow">Testimonials</p>
-              <h2>What local-business clients want to feel after launch</h2>
+              <h2 id="testimonials-title">What business owners want to feel after launch</h2>
               <p>
-                Credibility, simplicity, and more confidence when new customers check them out
-                online.
+                More confidence in their brand, a cleaner customer experience, and a website that
+                finally represents the quality of their work.
               </p>
             </div>
             <div class="testimonial-grid" id="testimonials-grid"></div>
           </div>
         </section>
 
-        <section class="section section-alt" id="faq">
+        <section class="section section-shell section-alt" id="faq" data-section aria-labelledby="faq-title">
           <div class="container faq-layout">
             <div class="section-heading reveal">
               <p class="eyebrow">FAQ</p>
-              <h2>Common questions from small business owners</h2>
+              <h2 id="faq-title">Common questions before booking a consultation</h2>
               <p>
-                Short answers to the things people usually want to know before getting started.
+                Quick answers for business owners who want to understand timing, pricing, and what
+                the process looks like before getting started.
               </p>
             </div>
             <div class="faq-list" id="faq-list"></div>
           </div>
         </section>
 
-        <section class="cta-banner-section">
+        <section class="cta-banner-section section-shell" aria-labelledby="cta-banner-title">
           <div class="container">
             <div class="cta-banner reveal">
               <div>
-                <p class="eyebrow">Ready to get started?</p>
-                <h2>Let’s build a website that helps your business look better and win more work.</h2>
+                <p class="eyebrow">Ready for a better site?</p>
+                <h2 id="cta-banner-title">Let&apos;s build a website that helps your business look stronger and get more leads.</h2>
               </div>
               <div class="cta-banner-actions">
-                <a class="button button-primary" href="#contact">Request a Quote</a>
-                <a class="button button-secondary light" href="#portfolio">View Example Work</a>
+                <a class="button button-primary" href="#contact" data-scroll>Request a Consultation</a>
+                <button class="button button-secondary light" type="button" data-open-portfolio="0">
+                  Preview Example Project
+                </button>
               </div>
             </div>
           </div>
         </section>
 
-        <section class="section contact-section" id="contact">
+        <section class="section section-shell contact-section" id="contact" data-section aria-labelledby="contact-title">
           <div class="container contact-layout">
             <div class="contact-copy reveal">
               <p class="eyebrow">Contact</p>
-              <h2>Let’s Build Your Business a Better Website</h2>
+              <h2 id="contact-title">Let&apos;s Build Your Business a Better Website</h2>
               <p>
-                Tell us a little about your business, what you need, and your budget range. We’ll
-                make the next step feel simple.
+                Tell us about your business, what you need, and the kind of results you want. We&apos;ll
+                follow up with clear next steps and the best fit for your project.
               </p>
+
+              <div class="contact-options">
+                <article class="contact-card">
+                  <span class="contact-card-label">Direct email</span>
+                  <h3>Prefer email instead?</h3>
+                  <p>Reach out directly if you already know what you need or want to ask a quick question.</p>
+                  <div class="contact-card-actions">
+                    <a class="button button-secondary contact-button" href="mailto:hello@rocwebdesign.com">Email RocWeb Design</a>
+                    <button class="button button-ghost copy-email-button" type="button" data-copy-email="hello@rocwebdesign.com">
+                      Copy Email
+                    </button>
+                  </div>
+                </article>
+
+                <article class="contact-card contact-card-highlight">
+                  <span class="contact-card-label">Consultation</span>
+                  <h3>Book a free project conversation</h3>
+                  <p>
+                    Share your goals through the form and we&apos;ll turn it into a clean starting plan,
+                    package recommendation, or custom quote.
+                  </p>
+                  <a class="button button-primary" href="#quote-form" data-scroll>Start My Consultation Request</a>
+                </article>
+              </div>
+
               <div class="contact-points">
                 <article>
                   <strong>Fast response</strong>
-                  <span>Clear next steps and a straightforward quote process.</span>
+                  <span>Clear recommendations, transparent pricing, and no confusing tech talk.</span>
                 </article>
                 <article>
-                  <strong>Tailored recommendations</strong>
-                  <span>We’ll suggest the right package or a custom option for your goals.</span>
+                  <strong>Business-focused guidance</strong>
+                  <span>We keep the conversation centered on leads, trust, and what your customers need to see.</span>
                 </article>
                 <article>
-                  <strong>Built around your business</strong>
-                  <span>No cookie-cutter messaging or confusing tech talk.</span>
+                  <strong>Easy to update later</strong>
+                  <span>The site structure is built so future edits and upgrades stay manageable.</span>
                 </article>
               </div>
             </div>
 
-            <form class="quote-form reveal reveal-delay">
-              <div class="form-grid">
-                <label>
-                  Name
-                  <input type="text" name="name" placeholder="Your full name" />
-                </label>
-                <label>
-                  Email
-                  <input type="email" name="email" placeholder="you@business.com" />
-                </label>
-                <label>
-                  Business Name
-                  <input type="text" name="business-name" placeholder="Your business name" />
-                </label>
-                <label>
-                  Project Type
-                  <select name="project-type">
-                    <option selected>New Website</option>
-                    <option>Website Redesign</option>
-                    <option>Landing Page</option>
-                    <option>Maintenance / Updates</option>
-                    <option>SEO / Mobile Improvements</option>
-                  </select>
-                </label>
-                <label>
-                  Budget Range
-                  <select name="budget-range">
-                    <option selected>$500 - $1,500</option>
-                    <option>$1,500 - $3,000</option>
-                    <option>$3,000 - $5,000</option>
-                    <option>$5,000+</option>
-                    <option>Not sure yet</option>
-                  </select>
-                </label>
-                <label>
-                  Timeline
-                  <select name="timeline">
-                    <option selected>As soon as possible</option>
-                    <option>Within 2-4 weeks</option>
-                    <option>Within 1-2 months</option>
-                    <option>Just exploring</option>
-                  </select>
-                </label>
-                <label class="full-width">
-                  Message
-                  <textarea
-                    name="message"
-                    rows="5"
-                    placeholder="Tell us about your business, the kind of site you want, and any goals you have."
-                  ></textarea>
-                </label>
-              </div>
-              <div class="form-footer">
-                <p>
-                  Prefer email? Reach out at
-                  <a href="mailto:hello@rocwebdesign.com">hello@rocwebdesign.com</a>
-                </p>
-                <button class="button button-primary" type="submit">Request My Free Quote</button>
-              </div>
-            </form>
+            <div class="quote-form-wrap reveal reveal-delay">
+              <form
+                class="quote-form"
+                id="quote-form"
+                data-formspree-form
+                novalidate
+                aria-describedby="form-status form-help"
+              >
+                <input type="hidden" name="_subject" value="New RocWeb Design consultation request" />
+                <div class="form-heading">
+                  <h3>Request a Free Consultation</h3>
+                  <p id="form-help">
+                    Fill this out and RocWeb Design will follow up with next steps, a package recommendation,
+                    or a custom quote.
+                  </p>
+                </div>
+
+                <div class="form-grid">
+                  <label>
+                    Name
+                    <input type="text" name="name" autocomplete="name" required placeholder="Your full name" />
+                    <span class="field-error" data-error-for="name"></span>
+                  </label>
+                  <label>
+                    Email
+                    <input type="email" name="email" autocomplete="email" required placeholder="you@business.com" />
+                    <span class="field-error" data-error-for="email"></span>
+                  </label>
+                  <label>
+                    Business Name
+                    <input type="text" name="business_name" autocomplete="organization" required placeholder="Your business name" />
+                    <span class="field-error" data-error-for="business_name"></span>
+                  </label>
+                  <label>
+                    Project Type
+                    <select name="project_type" required>
+                      <option value="">Select a project type</option>
+                      <option>New Website</option>
+                      <option>Website Redesign</option>
+                      <option>Landing Page</option>
+                      <option>Maintenance / Updates</option>
+                      <option>SEO / Mobile Improvements</option>
+                    </select>
+                    <span class="field-error" data-error-for="project_type"></span>
+                  </label>
+                  <label>
+                    Budget Range
+                    <select name="budget_range" required>
+                      <option value="">Select a budget range</option>
+                      <option>$500 - $1,500</option>
+                      <option>$1,500 - $3,000</option>
+                      <option>$3,000 - $5,000</option>
+                      <option>$5,000+</option>
+                      <option>Not sure yet</option>
+                    </select>
+                    <span class="field-error" data-error-for="budget_range"></span>
+                  </label>
+                  <label class="full-width">
+                    Message
+                    <textarea
+                      name="message"
+                      rows="5"
+                      required
+                      placeholder="Tell us about your business, what kind of site you want, and what you want the website to help you do."
+                    ></textarea>
+                    <span class="field-error" data-error-for="message"></span>
+                  </label>
+                </div>
+
+                <div class="form-footer">
+                  <div>
+                    <p class="form-contact-line">
+                      Or email us directly at
+                      <a href="mailto:hello@rocwebdesign.com">hello@rocwebdesign.com</a>
+                    </p>
+                    <p class="form-disclaimer">Form replies go straight to your configured form inbox once Formspree is connected.</p>
+                  </div>
+                  <button class="button button-primary submit-button" type="submit">
+                    <span class="submit-label">Send Consultation Request</span>
+                    <span class="submit-spinner" aria-hidden="true"></span>
+                  </button>
+                </div>
+
+                <div class="form-status" id="form-status" aria-live="polite"></div>
+              </form>
+            </div>
           </div>
         </section>
       </main>
@@ -351,7 +411,7 @@
       <footer class="site-footer">
         <div class="container footer-grid">
           <div>
-            <a class="brand footer-brand" href="#top">
+            <a class="brand footer-brand" href="#top" data-scroll>
               <span class="brand-mark">RW</span>
               <span class="brand-copy">
                 <strong>RocWeb Design</strong>
@@ -359,19 +419,19 @@
               </span>
             </a>
             <p class="footer-text">
-              Affordable, clean, modern websites for local businesses that want to look more
-              professional and generate more leads.
+              Affordable, clean, modern websites for local businesses that want to look more professional,
+              book more consultations, and generate more leads.
             </p>
           </div>
 
           <div>
             <h3>Navigation</h3>
             <div class="footer-links">
-              <a href="#services">Services</a>
-              <a href="#industries">Who It's For</a>
-              <a href="#portfolio">Portfolio</a>
-              <a href="#pricing">Pricing</a>
-              <a href="#contact">Contact</a>
+              <a href="#services" data-scroll>Services</a>
+              <a href="#industries" data-scroll>Who We Serve</a>
+              <a href="#portfolio" data-scroll>Portfolio</a>
+              <a href="#pricing" data-scroll>Pricing</a>
+              <a href="#contact" data-scroll>Consultation</a>
             </div>
           </div>
 
@@ -379,9 +439,8 @@
             <h3>Contact</h3>
             <div class="footer-links">
               <a href="mailto:hello@rocwebdesign.com">hello@rocwebdesign.com</a>
-              <a href="#">Instagram</a>
-              <a href="#">Facebook</a>
-              <a href="#">LinkedIn</a>
+              <a href="#contact" data-scroll>Request a consultation</a>
+              <a href="#portfolio" data-scroll>Preview example work</a>
             </div>
           </div>
         </div>
@@ -390,6 +449,21 @@
         </div>
       </footer>
     </div>
+
+    <button class="back-to-top" type="button" aria-label="Back to top">Top</button>
+
+    <div class="modal" id="portfolio-modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="portfolio-modal-title">
+      <div class="modal-backdrop" data-close-modal></div>
+      <div class="modal-panel" role="document">
+        <button class="modal-close" type="button" aria-label="Close project details" data-close-modal>
+          <span></span>
+          <span></span>
+        </button>
+        <div class="modal-content" id="portfolio-modal-content"></div>
+      </div>
+    </div>
+
+    <div class="toast" id="toast" role="status" aria-live="polite" aria-atomic="true"></div>
 
     <script src="script.js"></script>
   </body>
