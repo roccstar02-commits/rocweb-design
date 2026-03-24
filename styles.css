@@ -2071,3 +2071,41 @@ body {
     grid-template-columns: 1fr;
   }
 }
+
+.about-intro-section {
+  background: #0f2138;
+}
+
+.about-intro-section .section-heading h2,
+.about-intro-section .section-heading p,
+.about-intro-section .eyebrow {
+  color: #ffffff;
+}
+
+.about-intro-section .section-heading p {
+  color: #dbe6f3;
+}
+
+#services {
+  background: #10233f;
+}
+
+#services .section-heading h2 {
+  color: #ffffff;
+}
+
+#services .section-heading p {
+  color: #d7e2f0;
+}
+
+.hero-card-main .browser-bar {
+  display: none;
+}
+
+.hero-card-main {
+  padding-top: 1.15rem;
+}
+
+.hero-card-content h2 {
+  margin-top: 0;
+}
