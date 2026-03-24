@@ -1,8 +1,6 @@
-const formService = {
-  // Replace this with your real Formspree endpoint before deployment.
-  // Example: https://formspree.io/f/abcxyzde
-  endpoint: "https://formspree.io/f/YOUR_FORM_ID",
-};
+// Paste your Formspree endpoint here.
+// Example: https://formspree.io/f/abcxyzde
+const FORMSPREE_ENDPOINT = "https://formspree.io/f/mdawqdnr";
 
 const services = [
   {
@@ -460,6 +458,7 @@ const revealElements = document.querySelectorAll(".reveal");
 const counterElements = document.querySelectorAll("[data-count]");
 const quoteForm = document.getElementById("quote-form");
 const submitButton = quoteForm?.querySelector(".submit-button");
+const submitLabel = submitButton?.querySelector(".submit-label");
 const formStatus = document.getElementById("form-status");
 const copyEmailButton = document.querySelector("[data-copy-email]");
 
@@ -779,11 +778,17 @@ const clearFormStatus = () => {
 
 const setSubmittingState = (submitting) => {
   if (!quoteForm || !submitButton) return;
+
   isSubmitting = submitting;
   quoteForm.classList.toggle("is-submitting", submitting);
   submitButton.disabled = submitting;
+
+  if (submitLabel) {
+    submitLabel.textContent = submitting ? "Sending..." : "Send Consultation Request";
+  }
 };
 
+// Form submission handler
 quoteForm?.addEventListener("submit", async (event) => {
   event.preventDefault();
   if (isSubmitting) return;
@@ -796,19 +801,12 @@ quoteForm?.addEventListener("submit", async (event) => {
     return;
   }
 
-  if (formService.endpoint.includes("YOUR_FORM_ID")) {
-    setFormStatus(
-      "Connect your Formspree endpoint in script.js before deployment so submissions know where to go.",
-      "error"
-    );
-    return;
-  }
-
   setSubmittingState(true);
 
   try {
     const formData = new FormData(quoteForm);
-    const response = await fetch(formService.endpoint, {
+
+    const response = await fetch(FORMSPREE_ENDPOINT, {
       method: "POST",
       headers: {
         Accept: "application/json",
@@ -822,14 +820,17 @@ quoteForm?.addEventListener("submit", async (event) => {
 
     quoteForm.reset();
     Object.keys(validators).forEach((fieldName) => setFieldError(fieldName, ""));
+
+    // Success message
     setFormStatus(
-      "Thanks. Your consultation request was sent successfully. RocWeb Design will follow up soon.",
+      "Thank you! Your consultation request has been sent. We will contact you soon.",
       "success"
     );
     showToast("Consultation request sent.");
   } catch (error) {
+    // Error handling
     setFormStatus(
-      "Something went wrong while sending your message. Please try again or email rocwebdesignnj@gmail.com directly.",
+      "Something went wrong while sending your request. Please try again or email rocwebdesignnj@gmail.com directly.",
       "error"
     );
   } finally {
@@ -855,5 +856,8 @@ document.addEventListener("click", (event) => {
   if (modal?.classList.contains("is-open")) closeModal();
   destination.scrollIntoView({ behavior: prefersReducedMotion ? "auto" : "smooth", block: "start" });
 });
+
+
+
 
 
