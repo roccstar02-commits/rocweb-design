@@ -829,7 +829,7 @@ quoteForm?.addEventListener("submit", async (event) => {
     showToast("Consultation request sent.");
   } catch (error) {
     setFormStatus(
-      "Something went wrong while sending your message. Please try again or email hello@rocwebdesign.com directly.",
+      "Something went wrong while sending your message. Please try again or email rocwebdesign@gmail.com directly.",
       "error"
     );
   } finally {
@@ -855,3 +855,4 @@ document.addEventListener("click", (event) => {
   if (modal?.classList.contains("is-open")) closeModal();
   destination.scrollIntoView({ behavior: prefersReducedMotion ? "auto" : "smooth", block: "start" });
 });
+
