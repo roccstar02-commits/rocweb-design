@@ -2235,3 +2235,25 @@ body {
     font-size: 0.76rem;
   }
 }
+
+/* Logo size increase only: keeps the existing header/footer layout intact
+   and only scales the image assets themselves. */
+.logo-img {
+  height: 90px;
+  width: auto;
+}
+
+.footer-logo {
+  height: 60px;
+  width: auto;
+}
+
+@media (max-width: 768px) {
+  .logo-img {
+    height: 55px;
+  }
+
+  .footer-logo {
+    height: 40px;
+  }
+}
