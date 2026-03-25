@@ -2239,7 +2239,7 @@ body {
 /* Logo size increase only: keeps the existing header/footer layout intact
    and only scales the image assets themselves. */
 .logo-img {
-  height: 90px;
+  height: 95px;
   width: auto;
 }
 
@@ -2250,10 +2250,11 @@ body {
 
 @media (max-width: 768px) {
   .logo-img {
-    height: 55px;
+    height: 60px;
   }
 
   .footer-logo {
     height: 40px;
   }
 }
+
