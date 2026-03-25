@@ -1,6 +1,6 @@
 // Paste your Formspree endpoint here.
 // Example: https://formspree.io/f/abcxyzde
-const FORMSPREE_ENDPOINT = "https://formspree.io/f/mdawqdnr";
+const FORMSPREE_ENDPOINT = "https://formspree.io/f/mqegzbrb";
 
 const services = [
   {
