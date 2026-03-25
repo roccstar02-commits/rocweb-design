@@ -723,9 +723,9 @@ const renderPortfolioModal = (projectIndex) => {
       </div>
       <div>
         <h4>Results-style summary</h4>
-        <div class="modal-results">
-          ${project.results.map((result) => `<span>${result}</span>`).join("")}
-        </div>
+        <ul class="results-list modal-results">
+          ${project.results.map((result) => `<li>${result}</li>`).join("")}
+        </ul>
       </div>
       <div class="modal-details">
         ${project.details

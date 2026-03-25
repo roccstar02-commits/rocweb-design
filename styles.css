@@ -883,15 +883,24 @@ button {
   margin: 1.3rem 0 1.6rem;
 }
 
-.pricing-features span,
-.modal-results span {
+.results-list {
+  margin: 0.8rem 0 0;
+  padding-left: 1.25rem;
+}
+
+.results-list li {
+  margin-bottom: 0.45rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+
+.pricing-features span {
   display: flex;
   gap: 0.7rem;
   color: var(--text-muted);
 }
 
-.pricing-features span::before,
-.modal-results span::before {
+.pricing-features span::before {
   content: "•";
   color: var(--accent-strong);
   font-weight: 800;
@@ -1847,8 +1856,11 @@ body {
   color: #244a79;
 }
 
-.pricing-features span::before,
-.modal-results span::before {
+.pricing-features span::before {
+  color: #315f95;
+}
+
+.results-list li::marker {
   color: #315f95;
 }
 
@@ -2257,4 +2269,5 @@ body {
     height: 40px;
   }
 }
+
 
