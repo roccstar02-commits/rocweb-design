@@ -1,4 +1,4 @@
-# Rocksteady Marketing Setup
+# Ventluna Digital Setup
 
 This site is ready to deploy as a static site on Netlify or Vercel.
 
@@ -26,4 +26,6 @@ The public contact email shown across the site is:
 2. Replace placeholder project examples or testimonial copy if needed.
 3. Make sure `rocksteadymarketingnj@gmail.com` is the public email address you want displayed.
 4. Deploy to Netlify or Vercel.
+
+
 

@@ -139,7 +139,7 @@ const benefits = [
   {
     title: "Growth-focused marketing strategies",
     description:
-      "Rocksteady Marketing is built around strategy, visibility, conversion, and follow-up, not just visuals alone.",
+      "Ventluna Digital is built around strategy, visibility, conversion, and follow-up, not just visuals alone.",
   },
   {
     title: "Fast communication",
@@ -342,7 +342,7 @@ const processSteps = [
 const testimonials = [
   {
     quote:
-      "Rocksteady Marketing helped us think beyond just a website. The strategy felt clearer, the branding looked stronger, and the whole business felt more professional online.",
+      "Ventluna Digital helped us think beyond just a website. The strategy felt clearer, the branding looked stronger, and the whole business felt more professional online.",
     name: "Dr. Melissa P.",
     business: "Owner, Northfield Wellness Clinic",
   },
@@ -362,7 +362,7 @@ const testimonials = [
 
 const faqs = [
   {
-    question: "What does Rocksteady Marketing help with?",
+    question: "What does Ventluna Digital help with?",
     answer:
       "We help businesses grow through websites, SEO, paid ads, branding, lead generation, marketing strategy, analytics, automation, and other digital growth systems.",
   },
@@ -379,7 +379,7 @@ const faqs = [
   {
     question: "Can you help with lead generation and SEO too?",
     answer:
-      "Yes. Rocksteady Marketing is designed to support more than web design alone, including SEO, local visibility, landing pages, funnels, analytics, paid ads, and lead capture systems.",
+      "Yes. Ventluna Digital is designed to support more than web design alone, including SEO, local visibility, landing pages, funnels, analytics, paid ads, and lead capture systems.",
   },
   {
     question: "Do you offer ongoing support after launch?",
@@ -955,6 +955,8 @@ document.addEventListener("click", (event) => {
   if (modal?.classList.contains("is-open")) closeModal();
   destination.scrollIntoView({ behavior: prefersReducedMotion ? "auto" : "smooth", block: "start" });
 });
+
+
 
 
 
