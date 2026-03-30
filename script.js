@@ -5,17 +5,10 @@ const FORMSPREE_ENDPOINT = "https://formspree.io/f/mqegzbrb";
 const services = [
   {
     icon: "WD",
-    title: "Website Design",
+    title: "Website Design & Redesign",
     description:
-      "Modern websites built to position your business clearly, professionally, and credibly online.",
-    highlights: ["Strategic layout", "Conversion-focused", "Built for growth"],
-  },
-  {
-    icon: "WR",
-    title: "Website Redesign",
-    description:
-      "Refresh outdated websites with stronger messaging, modern visuals, and a better customer journey.",
-    highlights: ["Modern refresh", "Improved trust", "Stronger usability"],
+      "Modern website design and redesign services for businesses that need a stronger online presence, better credibility, and a site built to support growth.",
+    highlights: ["New site builds", "Modern refreshes", "Built for growth"],
   },
   {
     icon: "SEO",
