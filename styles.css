@@ -2537,3 +2537,11 @@ section[aria-labelledby="founders-title"],
 .contact-card > .button {
   margin-top: 1.1rem;
 }
+
+/* Hero main bubble transparency match fix */
+.hero-card-main,
+.hero-card-content {
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.035)),
+    rgba(11, 26, 42, 0.82);
+}
