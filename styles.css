@@ -2370,3 +2370,8 @@ body {
     font-size: 1.45rem;
   }
 }
+
+/* About page founders heading contrast fix */
+section[aria-labelledby="founders-title"] .eyebrow {
+  color: #ffffff;
+}
