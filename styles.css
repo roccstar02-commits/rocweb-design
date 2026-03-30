@@ -894,17 +894,7 @@ button {
   line-height: 1.6;
 }
 
-.pricing-features span {
-  display: flex;
-  gap: 0.7rem;
-  color: var(--text-muted);
-}
 
-.pricing-features span::before {
-  content: "•";
-  color: var(--accent-strong);
-  font-weight: 800;
-}
 
 .process-grid {
   grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -1856,7 +1846,7 @@ body {
   color: #244a79;
 }
 
-.pricing-features span::before {
+.pricing-features li::marker {
   color: #315f95;
 }
 
@@ -2506,4 +2496,33 @@ section[aria-labelledby="founders-title"],
     width: min(100%, 560px);
     margin: 0 auto;
   }
+}
+
+
+
+/* Pricing readability and bullet-point fix */
+.price {
+  text-align: center;
+}
+
+.price span {
+  display: block;
+  margin-top: 0.55rem;
+  font-size: 1.08rem;
+  line-height: 1.45;
+  letter-spacing: 0;
+}
+
+.pricing-features {
+  padding-left: 1.25rem;
+}
+
+.pricing-features li {
+  margin-bottom: 0.45rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+
+.pricing-features li::marker {
+  color: #315f95;
 }

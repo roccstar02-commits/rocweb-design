@@ -487,11 +487,11 @@ renderList(
     <article class="pricing-card reveal ${plan.featured ? "featured" : ""}">
       ${plan.badge ? `<span class="pricing-badge">${plan.badge}</span>` : ""}
       <h3>${plan.name}</h3>
-      <div class="price">${plan.price} <span>${plan.subtitle}</span></div>
+      <div class="price">${plan.price}<span>${plan.subtitle}</span></div>
       <p>${plan.description}</p>
-      <div class="pricing-features">
-        ${plan.features.map((feature) => `<span>${feature}</span>`).join("")}
-      </div>
+      <ul class="pricing-features">
+        ${plan.features.map((feature) => `<li>${feature}</li>`).join("")}
+      </ul>
       <a class="button ${plan.featured ? "button-primary" : "button-secondary"}" href="#contact" data-scroll>${plan.cta}</a>
     </article>
   `
