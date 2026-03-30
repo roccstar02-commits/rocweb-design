@@ -2375,3 +2375,17 @@ body {
 section[aria-labelledby="founders-title"] .eyebrow {
   color: #ffffff;
 }
+
+/* About page founders section contrast restore */
+section[aria-labelledby="founders-title"] {
+  background: #0f2138;
+}
+
+section[aria-labelledby="founders-title"] .eyebrow,
+section[aria-labelledby="founders-title"] .section-heading h2 {
+  color: #ffffff;
+}
+
+section[aria-labelledby="founders-title"] .section-heading p {
+  color: #dbe6f3;
+}
