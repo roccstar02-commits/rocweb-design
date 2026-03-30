@@ -2526,3 +2526,8 @@ section[aria-labelledby="founders-title"],
 .pricing-features li::marker {
   color: #315f95;
 }
+
+/* Homepage support-bubble label contrast fix */
+.contact-points strong {
+  color: #ffffff;
+}
