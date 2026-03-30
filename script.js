@@ -929,7 +929,7 @@ quoteForm?.addEventListener("submit", async (event) => {
   } catch (error) {
     // Error handling
     setFormStatus(
-      "Something went wrong while sending your request. Please try again or email rocksteadymarketingnj@gmail.com directly.",
+      "Something went wrong while sending your request. Please try again or email ventlunadigital@gmail.com directly.",
       "error"
     );
   } finally {
@@ -955,6 +955,7 @@ document.addEventListener("click", (event) => {
   if (modal?.classList.contains("is-open")) closeModal();
   destination.scrollIntoView({ behavior: prefersReducedMotion ? "auto" : "smooth", block: "start" });
 });
+
 
 
 

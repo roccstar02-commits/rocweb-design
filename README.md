@@ -18,14 +18,15 @@ Your notification email is managed inside Formspree.
 Change the destination in your Formspree dashboard whenever needed.
 
 The public contact email shown across the site is:
-`rocksteadymarketingnj@gmail.com`
+`ventlunadigital@gmail.com`
 
 ## Before deployment
 
 1. Confirm the Formspree endpoint in `script.js` is the one you want to use.
 2. Replace placeholder project examples or testimonial copy if needed.
-3. Make sure `rocksteadymarketingnj@gmail.com` is the public email address you want displayed.
+3. Make sure `ventlunadigital@gmail.com` is the public email address you want displayed.
 4. Deploy to Netlify or Vercel.
+
 
 
 
