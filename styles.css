@@ -2545,3 +2545,12 @@ section[aria-labelledby="founders-title"],
     linear-gradient(180deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.035)),
     rgba(11, 26, 42, 0.82);
 }
+
+/* Remove top accent bars from cards sitewide */
+.service-card::before,
+.industry-card::before,
+.portfolio-card::before,
+.pricing-card.featured::before,
+.contact-card-highlight::before {
+  display: none;
+}
