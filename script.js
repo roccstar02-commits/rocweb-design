@@ -42,7 +42,7 @@ const services = [
     icon: "OMP",
     title: "Ordering & Marketplace Platform",
     description:
-      "We build custom online ordering and marketplace platforms directly into business websites. This allows customers to place orders, make payments, and interact with businesses online without relying on third-party apps. These systems can support pickup ordering, service bookings, product sales, and other automated business functions.",
+      "This allows customers to place orders, make payments, and interact with businesses online without relying on third-party apps.",
     highlights: ["Ordering flow", "Payments", "Automated operations"],
   },
   {
