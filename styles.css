@@ -2554,3 +2554,13 @@ section[aria-labelledby="founders-title"],
 .contact-card-highlight::before {
   display: none;
 }
+
+/* Founder card role line */
+.founder-role {
+  margin: 0.4rem 0 0;
+  color: #d7e2f0;
+  font-size: 0.92rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
