@@ -2582,3 +2582,15 @@ section[aria-labelledby="founders-title"],
     display: inline;
   }
 }
+
+/* Noah founder card mobile stacking correction */
+@media (max-width: 768px) {
+  .noah-name-container {
+    display: block;
+    white-space: nowrap;
+  }
+
+  .noah-name-container span {
+    display: inline;
+  }
+}
