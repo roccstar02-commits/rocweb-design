@@ -2564,3 +2564,21 @@ section[aria-labelledby="founders-title"],
   letter-spacing: 0.04em;
   text-transform: uppercase;
 }
+
+/* Noah name mobile-only inline layout */
+.noah-name-container span {
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .noah-name-container {
+    display: inline-flex;
+    gap: 0.35rem;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+
+  .noah-name-container span {
+    display: inline;
+  }
+}
