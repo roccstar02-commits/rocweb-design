@@ -2606,3 +2606,33 @@ section[aria-labelledby="founders-title"],
   color: #244a79;
   font-weight: 700;
 }
+
+/* Inline phone number display */
+.contact-phone-list,
+.footer-phone-line {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.contact-phone-list {
+  margin: 0.9rem 0 0;
+  color: #244a79;
+  font-weight: 700;
+}
+
+.contact-phone-list a,
+.footer-phone-line a {
+  color: #244a79;
+  font-weight: 700;
+}
+
+.footer-phone-line {
+  margin: 0;
+  color: #d7e2f0;
+}
+
+.footer-phone-line span {
+  color: #d7e2f0;
+}
