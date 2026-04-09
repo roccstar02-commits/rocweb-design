@@ -2636,3 +2636,9 @@ section[aria-labelledby="founders-title"],
 .footer-phone-line span {
   color: #d7e2f0;
 }
+
+/* White clickable phone links */
+.contact-phone-list a,
+.footer-phone-line a {
+  color: #ffffff;
+}
