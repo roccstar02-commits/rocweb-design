@@ -2594,3 +2594,15 @@ section[aria-labelledby="founders-title"],
     display: inline;
   }
 }
+
+/* Contact phone number list */
+.contact-phone-list {
+  display: grid;
+  gap: 0.45rem;
+  margin-top: 0.9rem;
+}
+
+.contact-phone-list a {
+  color: #244a79;
+  font-weight: 700;
+}
