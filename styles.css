@@ -2642,3 +2642,10 @@ section[aria-labelledby="founders-title"],
 .footer-phone-line a {
   color: #ffffff;
 }
+
+/* Homepage direct-contact phone link visibility fix */
+.contact-card .contact-phone-list a {
+  color: #10233f;
+  text-decoration: underline;
+  text-underline-offset: 0.18em;
+}
